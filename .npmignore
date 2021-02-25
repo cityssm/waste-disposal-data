@@ -1,0 +1,13 @@
+.git
+.github
+.nyc_output
+node_modules
+test
+
+.atomignore
+.codeclimate.yml
+.eslintrc.js
+.gitignore
+.npmignore
+appveyor.yml
+tsconfig.json
