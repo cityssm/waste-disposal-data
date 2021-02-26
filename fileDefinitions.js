@@ -9,7 +9,7 @@ exports.fileDefinitions = exports.fileDefinition_locations = exports.fileDefinit
 ;
 exports.fileDefinition_items = {
     fileName: "items.csv",
-    columns: ["itemKey", "itemName", "shortDescription", "longDescription", "pictureURL", "searchTerms"],
+    columns: ["itemKey", "itemName", "shortDescription", "longDescription", "searchTerms"],
     primaryKeyColumns: ["itemKey"],
     requiredColumns: ["itemKey", "itemName"]
 };

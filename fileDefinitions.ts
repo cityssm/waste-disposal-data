@@ -10,7 +10,6 @@ export interface Item {
   itemName: string;
   shortDescription?: string;
   longDescription?: string;
-  pictureURL?: string;
   searchTerms?: string;
 };
 
@@ -58,7 +57,7 @@ export interface FileDefinition {
 
 export const fileDefinition_items: FileDefinition = {
   fileName: "items.csv",
-  columns: ["itemKey", "itemName", "shortDescription", "longDescription", "pictureURL", "searchTerms"],
+  columns: ["itemKey", "itemName", "shortDescription", "longDescription", "searchTerms"],
   primaryKeyColumns: ["itemKey"],
   requiredColumns: ["itemKey", "itemName"]
 };

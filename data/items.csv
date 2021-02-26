@@ -1,54 +1,54 @@
-itemKey,itemName,shortDescription,longDescription,pictureURL,searchTerms
-APPLIANCES-LARGE,Appliances - Large Household,"Washers, dryers, stoves, refrigerators.",,washing-machine.jpg,
-APPLIANCES-SMALL,Appliances - Small Household,"Toasters, lamps, microwaves.",,toaster.jpg,
-BARBECUES,Barbecues,,,barbecue.jpg,outdoor grill bbq
-BATTERIES-LARGE,Batteries - Large,Automobile batteries,,batteries-large.jpg,power
-BATTERIES-SMALL,Batteries - Single Use,"AA, AAA, C, D, 9V, and button cells",,batteries.jpg,power
-BEAMS-METAL,Metal Beams,,,,
-BLANKETS,Blankets,,,blankets.jpg,
-BLURAY,Blu-Ray Movies,,,,disc blue
-BOOKS,Books,,,books.jpg,novels textbooks reading
-BOTTLES-BEER,Beer Bottles,,,bottles-beer.jpg,glass
-BOTTLES-GLASS,"Glass bottles, glass jars",,,bottles-glass.jpg,
-BOTTLES-PLASTIC-1,Plastic Bottles - Number 1,"Pop bottles, water bottles",,bottles-plastic-1.jpg,pete
-BOTTLES-PLASTIC-2,Plastic Bottles - Number 2,Shampoo bottles,,,hdpe
-BOTTLES-WINE,Wine Bottles,,,,glass
-BUILDING-SUPPLIES,Building Supplies,"Cabinets, flooring, doors, windows, lighting fixtures, kitchen sinks, lumber, moldings, plumbing fixtures",,,
-CANS,"Pop cans, steel food cans",,,cans-food.jpg,tin soup soda aluminum
-CANS-BEER,Beer Cans,,,cans-beer.jpg,aluminum
-CAR-PARTS,Car parts,,,,engines brake tanks
-CARS,Cars and trucks,,,car.jpg,vehicles
-CIGARETTES,Cigarette Waste,,,cigarettes.jpg,smokes tobacco filters butts
-CLOTHING-GENTLYUSED,Clothing - Gently Used,"Shirts, pants, dresses",,clothing.jpg,
-CUTLERY,"Cutlery - Forks, spoons, knives",,,cutlery.jpg,utensils eating dining
-DISHES,Dishes,,,dishes.jpg,plates dining dinner
-DVDS,DVD Movies,,,,video disc
-ELECTRONICS,Electronics,,,computers.jpg,camera cell-phone computer printer telephone television laptop desktop
-ELECTRONICS-GAME-CONSOLES,Video Game Consoles,,,xbox.jpg,nintendo playstation sega xbox
-ELECTRONICS-SMARTPHONE,Smart Phones,,,smartphone.jpg,tablets ipads iphones android phablets
-FABRIC,Fabric,,,fabric.jpg,material cloth textile
-FLUORESCENT-LIGHTS,Fluorescent Lights,"Fluorescent lights, lamps and tubes",,,fluorescent light lamp tube
-INK-CARTRIDGES,Ink and Toner Cartridges,,,ink-cartridges.jpg,printer copier
-JACKETS,Jackets,,,jacket.jpg,coats
-LUGGAGE,Luggage,,,luggage.jpg,suitcase baggage
-METAL,Scrap Metal,"Copper, brass, aluminum, stainless steel",,metal.jpg,
-MEDICATIONS,Medication,"Prescription drugs, medical creams",,pills.jpg,pills inhalers antifungal antibacterial
-NEEDLES,"Needles, Medicinal",,,needles.jpg,sharps syringes pens lancets
-PAINT-NEW,Paint Cans - New,,,,
-PAPER,Paper,"Newspapers, flyers, phone books, paper egg cartons, toilet paper rolls, paper towel rolls, clean milk cartons, all other paper products",,,
-PAPER-CARDBOARD,Cardboard,"Pizza boxes, shipping boxes",,cardboard.jpg,
-PAPER-MAGAZINES,Magazines,,,magazines.jpg,catalogues
-PETSUPPLIES,Pet Supplies,"Toys, leashes, collars",,,cat dog hamster
-PILLOWS,Pillows,,,pillows.jpg,cushions
-PIPES-METAL,Metal Pipes,,,pipe-metal.jpg,tubes
-PROPANE-CYLINDERS,Propane Cylinders - Barbeque,"Small green, Large 20 lb.",,,tanks
-PURSES,Purses,,,purse.jpg,handbags clutch
-SHOES-GENTLYUSED,Shoes - Gently Used,,,shoes.jpg,boots footwear sneakers
-SPORTS-HOCKEY,Hockey Equipment,,,hockey.jpg,pads skates helmets goalie sport
-STYROFOAM,Styrofoam,Clean white packaging only,,,polystyrene
-STYROFOAM-MEATTRAYS,Styrofoam Meat Trays,,,,polystyrene
-TIN-FOIL,Tin foil - Clean,,,,aluminum
-TIRES-CAR,Rubber Tires - Car,,,tires-car.jpg,wheels rubber
-TOWELS,Towels,"Shower towels, beach towels",,towels.jpg,
-WRITING-INSTRUMENTS,Writing Instruments,"Pens, pencils, markers, highlighters",,pens.jpg,
-YARDWASTE,Yard Waste,"Leaves, grass clippings, garden waste",,leaves.jpg,hay straw
+itemKey,itemName,shortDescription,longDescription,searchTerms
+APPLIANCES-LARGE,Appliances - Large Household,"Washers, dryers, stoves, refrigerators.",,
+APPLIANCES-SMALL,Appliances - Small Household,"Toasters, lamps, microwaves.",,
+BARBECUES,Barbecues,,,outdoor grill bbq
+BATTERIES-LARGE,Batteries - Large,Automobile batteries,,power
+BATTERIES-SMALL,Batteries - Single Use,"AA, AAA, C, D, 9V, and button cells",,power
+BEAMS-METAL,Metal Beams,,,
+BLANKETS,Blankets,,,
+BLURAY,Blu-Ray Movies,,,disc blue
+BOOKS,Books,,,novels textbooks reading
+BOTTLES-BEER,Beer Bottles,,,glass
+BOTTLES-GLASS,"Glass bottles, glass jars",,,
+BOTTLES-PLASTIC-1,Plastic Bottles - Number 1,"Pop bottles, water bottles",,pete
+BOTTLES-PLASTIC-2,Plastic Bottles - Number 2,Shampoo bottles,,hdpe
+BOTTLES-WINE,Wine Bottles,,,glass
+BUILDING-SUPPLIES,Building Supplies,"Cabinets, flooring, doors, windows, lighting fixtures, kitchen sinks, lumber, moldings, plumbing fixtures",,
+CANS,"Pop cans, steel food cans",,,tin soup soda aluminum
+CANS-BEER,Beer Cans,,,aluminum
+CAR-PARTS,Car parts,,,engines brake tanks
+CARS,Cars and trucks,,,vehicles
+CIGARETTES,Cigarette Waste,,,smokes tobacco filters butts
+CLOTHING-GENTLYUSED,Clothing - Gently Used,"Shirts, pants, dresses",,
+CUTLERY,"Cutlery - Forks, spoons, knives",,,utensils eating dining
+DISHES,Dishes,,,plates dining dinner
+DVDS,DVD Movies,,,video disc
+ELECTRONICS,Electronics,,,camera cell-phone computer printer telephone television laptop desktop
+ELECTRONICS-GAME-CONSOLES,Video Game Consoles,,,nintendo playstation sega xbox
+ELECTRONICS-SMARTPHONE,Smart Phones,,,tablets ipads iphones android phablets
+FABRIC,Fabric,,,material cloth textile
+FLUORESCENT-LIGHTS,Fluorescent Lights,"Fluorescent lights, lamps and tubes",,fluorescent light lamp tube
+INK-CARTRIDGES,Ink and Toner Cartridges,,,printer copier
+JACKETS,Jackets,,,coats
+LUGGAGE,Luggage,,,suitcase baggage
+METAL,Scrap Metal,"Copper, brass, aluminum, stainless steel",,
+MEDICATIONS,Medication,"Prescription drugs, medical creams",,pills inhalers antifungal antibacterial
+NEEDLES,"Needles, Medicinal",,,sharps syringes pens lancets
+PAINT-NEW,Paint Cans - New,,,
+PAPER,Paper,"Newspapers, flyers, phone books, paper egg cartons, toilet paper rolls, paper towel rolls, clean milk cartons, all other paper products",,
+PAPER-CARDBOARD,Cardboard,"Pizza boxes, shipping boxes",,
+PAPER-MAGAZINES,Magazines,,,catalogues
+PETSUPPLIES,Pet Supplies,"Toys, leashes, collars",,cat dog hamster
+PILLOWS,Pillows,,,cushions
+PIPES-METAL,Metal Pipes,,,tubes
+PROPANE-CYLINDERS,Propane Cylinders - Barbeque,"Small green, Large 20 lb.",,tanks
+PURSES,Purses,,,handbags clutch
+SHOES-GENTLYUSED,Shoes - Gently Used,,,boots footwear sneakers
+SPORTS-HOCKEY,Hockey Equipment,,,pads skates helmets goalie sport
+STYROFOAM,Styrofoam,Clean white packaging only,,polystyrene
+STYROFOAM-MEATTRAYS,Styrofoam Meat Trays,,,polystyrene
+TIN-FOIL,Tin foil - Clean,,,aluminum
+TIRES-CAR,Rubber Tires - Car,,,wheels rubber
+TOWELS,Towels,"Shower towels, beach towels",,
+WRITING-INSTRUMENTS,Writing Instruments,"Pens, pencils, markers, highlighters",,
+YARDWASTE,Yard Waste,"Leaves, grass clippings, garden waste",,hay straw

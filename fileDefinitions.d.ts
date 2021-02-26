@@ -3,7 +3,6 @@ export interface Item {
     itemName: string;
     shortDescription?: string;
     longDescription?: string;
-    pictureURL?: string;
     searchTerms?: string;
 }
 export interface Location {
