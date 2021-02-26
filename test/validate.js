@@ -2,12 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const assert = require("assert");
 const fs = require("fs");
+const path = require("path");
 const Papa = require("papaparse");
 const fd = require("../fileDefinitions");
 const parseResults = {};
 const getPrimaryKey = (fileDefinition, row) => {
     let key = "";
-    for (const primaryKeyColumn of fileDefinition.primaryKey) {
+    for (const primaryKeyColumn of fileDefinition.primaryKeyColumns) {
         key += (key === "" ? "" : ":") + row[primaryKeyColumn];
     }
     return key;
@@ -25,7 +26,7 @@ describe("Parse and Validate Files", () => {
     before((done) => {
         let remainingCount = fd.fileDefinitions.length;
         for (const fileDefinition of fd.fileDefinitions) {
-            Papa.parse(fs.createReadStream(fileDefinition.fileName), {
+            Papa.parse(fs.createReadStream(path.join("data", fileDefinition.fileName)), {
                 header: true,
                 complete: (results) => {
                     parseResults[fileDefinition.fileName] = results;
@@ -54,7 +55,7 @@ describe("Parse and Validate Files", () => {
                 it("has records", () => {
                     assert.ok(parseResults[fileName].data.length > 0);
                 });
-                for (const columnName of fileDefinition.columnNames) {
+                for (const columnName of fileDefinition.columns) {
                     it("has column \"" + columnName + "\"", () => {
                         assert.ok(parseResults[fileName].data[0].hasOwnProperty(columnName));
                     });
@@ -63,6 +64,30 @@ describe("Parse and Validate Files", () => {
                     const keySet = getKeySet(fileDefinition);
                     assert.strictEqual(keySet.size, parseResults[fileName].data.length);
                 });
+                if (fileDefinition.numericColumns) {
+                    for (const columnName of fileDefinition.numericColumns) {
+                        it("has only numeric values in column \"" + columnName + "\"", () => {
+                            for (const row of parseResults[fileName].data) {
+                                if (isNaN(row[columnName])) {
+                                    assert.fail("non-numeric value = " + row[columnName]);
+                                }
+                            }
+                            assert.ok(true);
+                        });
+                    }
+                }
+                if (fileDefinition.requiredColumns) {
+                    for (const columnName of fileDefinition.requiredColumns) {
+                        it("always has values in required column \"" + columnName + "\"", () => {
+                            for (const row of parseResults[fileName].data) {
+                                if (row[columnName] === "") {
+                                    assert.fail();
+                                }
+                            }
+                            assert.ok(true);
+                        });
+                    }
+                }
             });
         }
     });

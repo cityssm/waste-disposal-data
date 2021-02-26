@@ -29,13 +29,15 @@ export interface ItemReuse {
     itemKey: string;
     reuseIndex: string;
     reuseName: string;
-    reuseDescription: string;
+    reuseDescription?: string;
     websiteURL?: string;
 }
 export interface FileDefinition {
     fileName: string;
-    primaryKey: string[];
-    columnNames: string[];
+    columns: string[];
+    primaryKeyColumns: string[];
+    numericColumns?: string[];
+    requiredColumns?: string[];
 }
 export declare const fileDefinition_items: FileDefinition;
 export declare const fileDefinition_locations: FileDefinition;

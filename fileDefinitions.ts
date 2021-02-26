@@ -1,3 +1,10 @@
+/*
+ * Row Types
+ * Note that row data is in CSV files, and CSV files do not have type information.
+ * Data that should numeric is marked appropriately as a comment,
+ * and is validated with `npm test`
+ */
+
 export interface Item {
   itemKey: string;
   itemName: string;
@@ -11,8 +18,8 @@ export interface Location {
   locationKey: string;
   locationName: string;
   address?: string;
-  latitude?: string;
-  longitude?: string;
+  latitude?: string; // number
+  longitude?: string; // number
   shortDescription?: string;
   longDescription?: string;
   websiteURL?: string;
@@ -21,7 +28,7 @@ export interface Location {
 export interface ItemLocation {
   itemKey: string;
   locationKey: string;
-  priorityNumber?: string;
+  priorityNumber?: string; // number
 };
 
 export interface RelatedItem {
@@ -33,43 +40,54 @@ export interface ItemReuse {
   itemKey: string;
   reuseIndex: string;
   reuseName: string;
-  reuseDescription: string;
+  reuseDescription?: string;
   websiteURL?: string;
 };
 
+/*
+ * File Definitions
+ */
 
 export interface FileDefinition {
   fileName: string;
-  primaryKey: string[];
-  columnNames: string[];
+  columns: string[];
+  primaryKeyColumns: string[];
+  numericColumns?: string[];
+  requiredColumns?: string[];
 };
-
 
 export const fileDefinition_items: FileDefinition = {
   fileName: "items.csv",
-  primaryKey: ["itemKey"],
-  columnNames: ["itemKey", "itemName", "shortDescription", "longDescription", "pictureURL", "searchTerms"]
+  columns: ["itemKey", "itemName", "shortDescription", "longDescription", "pictureURL", "searchTerms"],
+  primaryKeyColumns: ["itemKey"],
+  requiredColumns: ["itemKey", "itemName"]
 };
 
 export const fileDefinition_locations: FileDefinition = {
   fileName: "locations.csv",
-  primaryKey: ["locationKey"],
-  columnNames: ["locationKey", "locationName", "address", "latitude", "longitude", "shortDescription", "longDescription", "websiteURL"]
+  columns: ["locationKey", "locationName", "address", "latitude", "longitude", "shortDescription", "longDescription", "websiteURL"],
+  primaryKeyColumns: ["locationKey"],
+  numericColumns: ["latitude", "longitude"],
+  requiredColumns: ["locationKey", "locationName"]
 };
-
 
 export const fileDefinitions: FileDefinition[] = [
   fileDefinition_items,
   fileDefinition_locations, {
     fileName: "itemLocations.csv",
-    primaryKey: ["itemKey", "locationKey"],
-    columnNames: ["itemKey", "locationKey", "priorityNumber"]
+    columns: ["itemKey", "locationKey", "priorityNumber"],
+    primaryKeyColumns: ["itemKey", "locationKey"],
+    numericColumns: ["priorityNumber"],
+    requiredColumns: ["itemKey", "locationKey"]
   }, {
     fileName: "relatedItems.csv",
-    primaryKey: ["itemKeyA", "itemKeyB"],
-    columnNames: ["itemKeyA", "itemKeyB"]
+    columns: ["itemKeyA", "itemKeyB"],
+    primaryKeyColumns: ["itemKeyA", "itemKeyB"],
+    requiredColumns: ["itemKeyA", "itemKeyB"]
   }, {
     fileName: "itemReuses.csv",
-    primaryKey: ["itemKey", "reuseIndex"],
-    columnNames: ["itemKey", "reuseIndex", "reuseName", "reuseDescription", "websiteURL"]
+    columns: ["itemKey", "reuseIndex", "reuseName", "reuseDescription", "websiteURL"],
+    primaryKeyColumns: ["itemKey", "reuseIndex"],
+    numericColumns: ["reuseIndex"],
+    requiredColumns: ["itemKey", "reuseIndex", "reuseName"]
   }];

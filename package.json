@@ -1,6 +1,6 @@
 {
   "name": "@cityssm/waste-disposal-data",
-  "version": "0.1.20210225",
+  "version": "0.1.20210226",
   "description": "The data driving the City's waste disposal helper app",
   "main": "index.js",
   "scripts": {
