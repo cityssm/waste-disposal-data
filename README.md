@@ -1,6 +1,6 @@
 # waste-disposal-data
 
-[![AppVeyor](https://img.shields.io/appveyor/build/dangowans/waste-disposal-data)](https://ci.appveyor.com/project/dangowans/waste-disposal-data)
+[![npm (scoped)](https://img.shields.io/npm/v/@cityssm/waste-disposal-data)](https://www.npmjs.com/package/@cityssm/waste-disposal-data) [![AppVeyor](https://img.shields.io/appveyor/build/dangowans/waste-disposal-data)](https://ci.appveyor.com/project/dangowans/waste-disposal-data)
 
 The data driving the City's waste disposal helper app, **currently under development**.
 
