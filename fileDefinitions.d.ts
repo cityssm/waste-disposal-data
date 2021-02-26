@@ -18,7 +18,6 @@ export interface Location {
 export interface ItemLocation {
     itemKey: string;
     locationKey: string;
-    priorityNumber?: string;
 }
 export interface RelatedItem {
     itemKeyA: string;
@@ -26,7 +25,6 @@ export interface RelatedItem {
 }
 export interface ItemReuse {
     itemKey: string;
-    reuseIndex: string;
     reuseName: string;
     reuseDescription?: string;
     websiteURL?: string;

@@ -27,7 +27,6 @@ export interface Location {
 export interface ItemLocation {
   itemKey: string;
   locationKey: string;
-  priorityNumber?: string; // number
 };
 
 export interface RelatedItem {
@@ -37,7 +36,6 @@ export interface RelatedItem {
 
 export interface ItemReuse {
   itemKey: string;
-  reuseIndex: string;
   reuseName: string;
   reuseDescription?: string;
   websiteURL?: string;
@@ -74,9 +72,8 @@ export const fileDefinitions: FileDefinition[] = [
   fileDefinition_items,
   fileDefinition_locations, {
     fileName: "itemLocations.csv",
-    columns: ["itemKey", "locationKey", "priorityNumber"],
+    columns: ["itemKey", "locationKey"],
     primaryKeyColumns: ["itemKey", "locationKey"],
-    numericColumns: ["priorityNumber"],
     requiredColumns: ["itemKey", "locationKey"]
   }, {
     fileName: "relatedItems.csv",
@@ -85,8 +82,7 @@ export const fileDefinitions: FileDefinition[] = [
     requiredColumns: ["itemKeyA", "itemKeyB"]
   }, {
     fileName: "itemReuses.csv",
-    columns: ["itemKey", "reuseIndex", "reuseName", "reuseDescription", "websiteURL"],
-    primaryKeyColumns: ["itemKey", "reuseIndex"],
-    numericColumns: ["reuseIndex"],
-    requiredColumns: ["itemKey", "reuseIndex", "reuseName"]
+    columns: ["itemKey", "reuseName", "reuseDescription", "websiteURL"],
+    primaryKeyColumns: ["itemKey", "reuseName"],
+    requiredColumns: ["itemKey", "reuseName"]
   }];

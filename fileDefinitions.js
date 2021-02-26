@@ -24,9 +24,8 @@ exports.fileDefinitions = [
     exports.fileDefinition_items,
     exports.fileDefinition_locations, {
         fileName: "itemLocations.csv",
-        columns: ["itemKey", "locationKey", "priorityNumber"],
+        columns: ["itemKey", "locationKey"],
         primaryKeyColumns: ["itemKey", "locationKey"],
-        numericColumns: ["priorityNumber"],
         requiredColumns: ["itemKey", "locationKey"]
     }, {
         fileName: "relatedItems.csv",
@@ -35,9 +34,8 @@ exports.fileDefinitions = [
         requiredColumns: ["itemKeyA", "itemKeyB"]
     }, {
         fileName: "itemReuses.csv",
-        columns: ["itemKey", "reuseIndex", "reuseName", "reuseDescription", "websiteURL"],
-        primaryKeyColumns: ["itemKey", "reuseIndex"],
-        numericColumns: ["reuseIndex"],
-        requiredColumns: ["itemKey", "reuseIndex", "reuseName"]
+        columns: ["itemKey", "reuseName", "reuseDescription", "websiteURL"],
+        primaryKeyColumns: ["itemKey", "reuseName"],
+        requiredColumns: ["itemKey", "reuseName"]
     }
 ];
