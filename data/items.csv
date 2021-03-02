@@ -29,7 +29,7 @@ DISHES,Dishes,,,plates dining dinner kitchen
 DVDS,DVD Movies,,,video disc electronics
 ELECTRONICS,Electronics,,,camera cell-phone computer printer telephone television laptop desktop
 ELECTRONICS-GAME-CONSOLES,Video Game Consoles,,,nintendo playstation sega xbox electronics
-ELECTRONICS-SMARTPHONE,Smart Phones,,,tablets ipads iphones android phablets electronics
+ELECTRONICS-SMARTPHONE,Smart Phones,"iPhones and Android phones",,tablets ipads iphones android phablets electronics samsung pixel
 EYEGLASSES,Eyeglasses,,,shades sunglasses
 FABRIC,Fabric,,,material cloth textile
 FIRE-EXTINGUISHER,Fire Extinguishers,,,
