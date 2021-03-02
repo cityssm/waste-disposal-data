@@ -9,7 +9,7 @@ BATTERIES-SMALL,Batteries - Single Use,"AA, AAA, C, D, 9V, and button cells",,po
 BEAMS-METAL,Metal Beams,,,steel
 BLANKETS,Blankets,,,quilt duvet
 BLEACH,Bleach,,,clorox
-BLURAY,Blu-Ray Movies,,,disc blue
+BLURAY,Blu-Ray Movies,,,disc blue electronics
 BOOKS,Books,,,novels textbooks reading
 BOTTLES-BEER,Beer Bottles,,,glass
 BOTTLES-GLASS,"Glass bottles, glass jars",,,mason
@@ -24,12 +24,12 @@ CARS,Cars and trucks,,,vehicles
 CHEMICALS,Chemicals,,,
 CIGARETTES,Cigarette Waste,,,smokes tobacco filters butts
 CLOTHING-GENTLYUSED,Clothing - Gently Used,"Shirts, pants, dresses",,
-CUTLERY,"Cutlery - Forks, spoons, knives",,,utensils eating dining
-DISHES,Dishes,,,plates dining dinner
-DVDS,DVD Movies,,,video disc
+CUTLERY,"Cutlery - Forks, spoons, knives",,,utensils eating dining kitchen
+DISHES,Dishes,,,plates dining dinner kitchen
+DVDS,DVD Movies,,,video disc electronics
 ELECTRONICS,Electronics,,,camera cell-phone computer printer telephone television laptop desktop
-ELECTRONICS-GAME-CONSOLES,Video Game Consoles,,,nintendo playstation sega xbox
-ELECTRONICS-SMARTPHONE,Smart Phones,,,tablets ipads iphones android phablets
+ELECTRONICS-GAME-CONSOLES,Video Game Consoles,,,nintendo playstation sega xbox electronics
+ELECTRONICS-SMARTPHONE,Smart Phones,,,tablets ipads iphones android phablets electronics
 EYEGLASSES,Eyeglasses,,,shades sunglasses
 FABRIC,Fabric,,,material cloth textile
 FIRE-EXTINGUISHER,Fire Extinguishers,,,
