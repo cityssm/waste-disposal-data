@@ -1,8 +1,13 @@
 # waste-disposal-data
 
-[![npm (scoped)](https://img.shields.io/npm/v/@cityssm/waste-disposal-data)](https://www.npmjs.com/package/@cityssm/waste-disposal-data) [![AppVeyor](https://img.shields.io/appveyor/build/dangowans/waste-disposal-data)](https://ci.appveyor.com/project/dangowans/waste-disposal-data)
+---
 
-The data driving the City's waste disposal helper app, **currently under development**.
+**Archived**<br />
+Identified as a project for [CityStudio Sault Ste. Marie](https://algomau.ca/academics/home-of-dean/teaching-learning/citystudio/).
+
+---
+
+The data driving the City's waste disposal helper app.
 
 ## Data Files
 
